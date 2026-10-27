@@ -67,7 +67,7 @@ p{
     background-color: rgb(253, 237, 117);
     aspect-ratio: 1;
     box-sizing: border-box;
-    padding: 2em;
+    padding: 1em;
     transition: all 0.5s ease; 
     overflow: auto;
     justify-content: center;
@@ -76,9 +76,10 @@ p{
 
 .grid-item:hover {
     grid-row: span 2; 
-    grid-column: span 2; 
     background-color:rgb(247, 210, 87);
-    transform: scale2;
+    /* transform: scale2; */
+    aspect-ratio: 1/2;
+
 }
 
 .grid-item:hover .text{
@@ -93,7 +94,7 @@ p{
     justify-content: center;
     align-items: center;
     width: 800px;
-    padding: 2em;
+    padding: 1em;
     box-sizing: border-box;
 }
 .text{
