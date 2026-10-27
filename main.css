@@ -53,7 +53,9 @@ p{
     column-gap: 8px;
     row-gap: 8px;
     width: 1000px;
-
+    /* height: 800px; */
+    /* border: 1px solid red; */
+    align-content: start;
 }
 
 .main{
@@ -68,7 +70,8 @@ p{
     aspect-ratio: 1;
     box-sizing: border-box;
     padding: 1em;
-    transition: all 0.5s ease; 
+    /* transition: aspect-ratio 0.5s ease;  */
+    transition: aspect-ratio 0.5 ease;
     overflow: auto;
     justify-content: center;
     align-items: center;
@@ -94,9 +97,11 @@ p{
     justify-content: center;
     align-items: center;
     width: 800px;
-    padding: 1em;
+    padding: 3em;
     box-sizing: border-box;
 }
+
+
 .text{
     display: flex;
     justify-content: center;
