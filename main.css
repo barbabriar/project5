@@ -1,0 +1,102 @@
+body{
+    text-align: center;
+}
+
+h2{
+    font-size: 75%;
+}
+
+p{
+    line-height: 175%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75%;
+
+}
+
+.slide {
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+    contain-intrinsic-height: 100vh;
+    contain-intrinsic-width: 100vw;
+    height: 100svh;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidea{
+    background-color:aliceblue;
+}
+
+.slideb{
+    background-color:rgb(253, 237, 117);
+}
+
+.slidec{
+    background-color:aliceblue;
+}
+
+.grid-container {
+    margin: 16px;
+    display: grid;
+    column-gap: 8px;
+    row-gap: 8px;
+    width: 1000px;
+
+}
+
+.main{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.grid-item {
+    margin:5px;
+    padding: 8px;
+    background-color: rgb(253, 237, 117);
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    padding: 2em;
+    transition: transform 0.3s;
+    overflow: auto
+
+}
+
+.grid-item:hover {
+    grid-row: span 2; 
+    grid-column: span 2; 
+    background-color:rgb(247, 210, 87);
+    transform: scale2;
+
+
+}
+
+.grid-item:hover .text{
+    opacity: 1;
+    font-size: 15px;
+}
+
+
+.myentry{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    padding: 5em;
+    box-sizing: border-box;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.1px;
+    color: rgb(2, 2, 2);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
